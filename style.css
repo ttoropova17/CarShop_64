@@ -1,0 +1,531 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-size: 18pt;
+    font-family: Raleway;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+
+#str1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #000000;
+}
+
+.header{
+    margin: 0;
+    padding: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    flex-direction: row;
+    background-image: url("images/bg3.png");
+    background-attachment: fixed;
+}
+
+.Logo{
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: none;
+}
+
+.contactsLogo{
+    display: grid;
+    align-items: end;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+.contactsLogo p{
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+    text-align: right;
+    white-space: pre;
+    color: #FFFFFF;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.name{
+    max-width: 300px;
+    height: auto;
+}
+
+.navigation{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем отступы*/
+    padding: 0; /*убираем отступы*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    color: #FFFFFF; /*меняем цвет ссылок*/
+    padding:0px 15px; /*добавляем отступ*/
+    font-size: 20pt;
+    line-height: normal; /*ровняем меню по вертикали*/
+    display: block;
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+    font-weight: 600;
+}
+
+a:hover {
+    /*добавляем эффект при наведении*!*/
+    color: #FFE70F;
+}
+
+li {
+    float:left; /*Размещаем список горизонтально для реализации меню*/
+    position:relative; /*задаем позицию для позиционирования*/
+    width: 20%;
+    padding-top: 10px;
+    text-align: center;
+    align-items: center;
+    border-top: 1px solid #FFE70F;
+}
+
+/*Стили для скрытого выпадающего меню*/
+li > ul {
+    position:absolute;
+    top: auto;
+    display:none;
+    background-color: #000000;
+}
+
+/*Делаем скрытую часть видимой*/
+li:hover > ul {
+    display:block;
+    width:100%;  /*Задаем ширину выпадающего меню*/
+    z-index: 10;
+
+}
+li:hover > ul > li {
+    float:none; /*Убираем горизонтальное позиционирование*/
+    width: 100%;
+}
+
+
+
+
+#str2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: #FFFFFF;
+
+}
+
+.scroll{
+    margin: 40px;
+}
+
+#str023 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    padding-bottom: 100px;
+    color: #FFFFFF;
+}
+
+.meeting{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.meeting h1{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px;
+    font-weight: 600;
+}
+.he{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow:auto;
+    border: 4px inset #FFE70F;
+    justify-content: space-between;
+    background: #FFFFFF;
+    color: #000000;
+}
+.heText{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+.heText h2{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    white-space: pre;
+    font-weight: 600;
+}
+
+.heText p{
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    font-weight: 600;
+}
+.heImg{
+    display: flex;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.afterHe{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+#str3{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    background-color: black;
+    background-image: url("images/bg3.png");
+    background-attachment: fixed;
+}
+
+#str3 img{
+    max-width: 80%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+
+#str4 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    color: #FFFFFF;
+}
+
+
+.kat{
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    margin: 10px;
+    margin-bottom: 90px;
+    padding: 0;
+    justify-content: center;
+    background: #FFFFFF;
+
+}
+.ok{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.kat h1{
+    font-weight: 600;
+    color: black;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
+.kat p{
+    font-weight: 600;
+    font-size: 20pt;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    background: #FFE70F;
+}
+.kat a{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+.kat a p{
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 24pt;
+    font-weight: 800;
+    background: none;
+}
+.kat a p:hover{
+    color: #FFE70F;
+    font-size: 24pt;
+    font-weight: 800;
+
+}
+
+
+#str5{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+    width: 80%;
+    color: #000000;
+}
+.str5Name{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: auto;
+}
+.str5Name h2{
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+.plus{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    border: 4px inset #FFE70F;
+    background: #FFFFFF;
+}
+.line{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    align-items: center;
+}
+.lineImg{
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lineImg img{
+    max-width: 70%;
+    height: auto;
+}
+.lineText{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    width: 80%;
+}
+.lineText h4{
+    margin: 0;
+}
+
+
+#str6{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 100px;
+    width: 80%;
+    color: #FFFFFF;
+}
+
+.videoHello{
+    margin: 10px;
+    margin-top: 70px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+video{
+    max-width: 80%;
+}
+
+
+.assort{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    text-align: center;
+    border-top: 1px solid #FFE70F;
+}
+
+#str7{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #000000;
+}
+
+.header2{
+    margin: 0;
+    padding: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    flex-direction: row;
+
+    background-image: url("images/bg1.jpg");
+    background-size: cover;
+}
+
+.Logo2{
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: none;
+}
+
+.contactsLogo2{
+    display: grid;
+    align-items: end;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 60%;
+}
+
+.contactsLogo2 p{
+    margin: 0;
+    padding: 0;
+    padding-right: 5px;
+    text-align: right;
+    white-space: pre;
+    color: #FFFFFF;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+.name2{
+    max-width: 280px;
+    height: auto;
+}
+
+
+
+
+.icon{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
